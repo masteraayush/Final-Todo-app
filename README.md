@@ -1,6 +1,6 @@
 This app was Aayush Lal Rajbhandari for the final assignment of Developing Mobile Applications.
 "# ToDo" 
-## We can register multiple new user.<br/>![Register](https://user-images.githubusercontent.com/50390723/168483408-d2ef7c04-143a-45b6-89bd-9b7abe2e2cff.gif)
+## We can register multiple new users.<br/>![Register](https://user-images.githubusercontent.com/50390723/168483408-d2ef7c04-143a-45b6-89bd-9b7abe2e2cff.gif)
 
 ## Registered users can login to their account.<br/>![Todo app login](https://user-images.githubusercontent.com/50390723/168483413-5d55bd2a-9372-4d8c-afa0-b96c67c1b640.gif)
 
