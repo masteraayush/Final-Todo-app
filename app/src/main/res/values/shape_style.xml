@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  settings icon shape appearance style for Home Fragment  -->
+    <style name="Circular">
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>

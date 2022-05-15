@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".dashboard.EditDeleteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/toolbar_background"
+        android:elevation="16dp"
+        android:orientation="vertical">
+
+        <!-- background layout settings of the app bar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="3"
+                android:background="@drawable/toolbar_background"
+                android:orientation="horizontal"
+                android:padding="1dp"
+                tools:ignore="NestedWeights">
+
+                <!--fragment heading logo-->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/text_logo"
+                    android:layout_marginHorizontal="150dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-11dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:id="@+id/detailImage"
+                android:layout_width="match_parent"
+                android:layout_height="265dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img"/>
+
+            <TextView
+                android:id="@+id/detailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#59000000"
+                android:fontFamily="@font/oswald_light"
+                android:letterSpacing="0.05"
+                android:paddingVertical="4dp"
+                android:paddingStart="10dp"
+                android:text="Paris's finest hour while sun sets low"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/detailImage"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/location_date_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#59000000"
+                app:layout_constraintBottom_toBottomOf="@id/detailImage">
+
+                <ImageView
+                    android:id="@+id/location_detailImage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintBottom_toBottomOf="@id/location_date_Layout"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:src="@drawable/ic_location"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/detailLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/oswald"
+                    android:letterSpacing="0.1"
+                    android:padding="4dp"
+                    android:text="Paris"
+                    android:textColor="@color/LightGrey"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="@id/location_date_Layout"
+                    app:layout_constraintStart_toEndOf="@id/location_detailImage" />
+
+                <TextView
+                    android:id="@+id/detailDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/oswald_semibold"
+                    android:paddingBottom="5dp"
+                    android:text="02/11/2018"
+                    android:textColor="@color/LightGrey"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/location_date_Layout"
+                    app:layout_constraintEnd_toEndOf="@id/location_date_Layout" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3498DB"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.05"
+                android:padding="5dp"
+                android:text="Task Description"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detailImage" />
+
+            <TextView
+                android:id="@+id/detailJournalThoughts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="1dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:padding="7dp"
+                android:text="Hello, this is me your friend"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintTop_toBottomOf="@id/textLayout"
+                tools:layout_editor_absoluteX="1dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detailJournalThoughts">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/shareJournalBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/detailJournalThoughts"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:hapticFeedbackEnabled="true"
+                    android:src="@drawable/ic_share"
+                    android:layout_marginStart="75dp"
+                    android:scaleType="center"
+                    app:maxImageSize="40dp"
+                    android:backgroundTint="@color/light_blue"
+                    tools:ignore="NotSibling"
+                    android:elevation="0dp"
+                    app:tint="@null"
+                    app:borderWidth="0dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/editJournalBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/detailJournalThoughts"
+                    app:layout_constraintStart_toEndOf="@id/shareJournalBtn"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:hapticFeedbackEnabled="true"
+                    android:src="@drawable/ic_edit"
+                    app:maxImageSize="40dp"
+                    app:borderWidth="0dp"
+                    android:elevation="0dp"
+                    app:tint="@color/light_blue"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/white"
+                    tools:ignore="NotSibling"
+                    android:layout_marginStart="40dp"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/deleteJournalBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/detailJournalThoughts"
+                    app:layout_constraintStart_toEndOf="@id/editJournalBtn"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="10dp"
+                    app:borderWidth="0dp"
+                    android:elevation="0dp"
+                    android:hapticFeedbackEnabled="true"
+                    android:src="@drawable/ic_delete"
+                    app:maxImageSize="40dp"
+                    app:tint="@null"
+                    android:backgroundTint="@color/Red"
+                    tools:ignore="NotSibling"
+                    android:layout_marginStart="40dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</LinearLayout>

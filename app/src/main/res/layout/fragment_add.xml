@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragments.AddFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/toolbar_background"
+        android:elevation="16dp"
+        android:orientation="vertical">
+
+        <!-- background layout settings of the app bar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="3"
+                android:background="@drawable/toolbar_background"
+                android:orientation="horizontal"
+                android:padding="1dp"
+                tools:ignore="NestedWeights">
+
+                <!--fragment heading text-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="-5dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:letterSpacing="0.1"
+                    android:padding="10dp"
+                    android:text="@string/add_item"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--to display the image that the user uploads of his day-->
+            <ImageView
+                android:id="@+id/addImageView"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:src="@drawable/ic_no_image"
+                android:scaleType="centerCrop"/>
+
+            <!--floating action button for uploading image-->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabAddImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="340dp"
+                android:layout_marginTop="-55dp"
+                android:scaleType="centerCrop"
+                android:backgroundTint="#3498DB"
+                android:hapticFeedbackEnabled="true"
+                android:src="@drawable/ic_add_photo"
+                app:maxImageSize="30dp"
+                app:tint="@color/white"
+                />
+
+
+            <!--for individual item detail category-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#3498DB">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingStart="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/journal_name"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+
+            <!--edit text field for individual user input-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="12dp"
+                    android:hint="e.g., Task for the day"
+                    android:textSize="21sp"
+                    android:textColor="@color/DimGray"
+                    android:padding="7dp"
+                    tools:ignore="RtlSymmetry"
+                    android:background="@drawable/text_container"/>
+
+            </LinearLayout>
+
+            <!--for individual item detail category-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#3498DB">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingStart="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/thoughts"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+
+            <!--edit text field for individual user input-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/Thoughts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="12dp"
+                    android:hint="e.g., Buy grocery, house paint..."
+                    android:textSize="21sp"
+                    android:textColor="@color/DimGray"
+                    android:padding="7dp"
+                    tools:ignore="RtlSymmetry"
+                    android:background="@drawable/text_container"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#3498DB">
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    android:layout_marginTop="4dp"-->
+<!--                    android:paddingStart="5dp"-->
+<!--                    android:paddingBottom="5dp"-->
+<!--                    android:text="@string/location"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="22sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    tools:ignore="RtlSymmetry" />-->
+            </LinearLayout>
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/text_container"-->
+<!--                android:padding="2dp"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/jLocation"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="Click on add icon to set location..."-->
+<!--                    android:padding="10dp"-->
+<!--                    android:textColor="@color/DimGray"-->
+<!--                    android:textSize="21sp" />-->
+
+<!--                <androidx.appcompat.widget.AppCompatImageButton-->
+<!--                    android:id="@+id/addLocation"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="45dp"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_marginEnd="5dp"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:paddingTop="1dp"-->
+<!--                    android:paddingBottom="1dp"-->
+<!--                    android:src="@drawable/ic_add_location"-->
+<!--                    app:tint="@color/light_blue" />-->
+
+<!--            </RelativeLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/saveBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save"
+                    android:background="@drawable/button_edit"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:hapticFeedbackEnabled="true"
+                    android:fontFamily="@font/viga"
+                    android:drawableLeft="@drawable/ic_save"
+                    android:drawablePadding="5dp"
+                    android:letterSpacing="0.09"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

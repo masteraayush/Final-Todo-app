@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bms_design"
+    android:padding="25dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oswald"
+                android:text="Edit Your Entry"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/editImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/oswald"
+                    android:text="Title"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/light_blue"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editJournalTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A beautiful sunset in paris"
+                    android:paddingStart="10dp"
+                    android:fontFamily="@font/oswald"
+                    android:textSize="19sp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/text_container"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/oswald"
+                    android:text="Task Description"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/light_blue"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editJournalThought"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This day started with a beautiful walk around the Eiffel tower."
+                    android:fontFamily="@font/oswald"
+                    android:paddingStart="10dp"
+                    android:textSize="19sp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/text_container"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    android:layout_marginTop="7dp"-->
+<!--                    android:src="@drawable/ic_location"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/oswald"-->
+<!--                    android:text="Location: "-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:layout_marginStart="1dp"-->
+<!--                    android:textColor="@color/light_blue"-->
+<!--                    android:padding="5dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/editLocation"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Paris"-->
+<!--                    android:fontFamily="@font/oswald"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:textSize="19sp"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:textColor="@color/black" />-->
+
+<!--                <androidx.appcompat.widget.AppCompatImageButton-->
+<!--                    android:id="@+id/editLocationBtn"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="45dp"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_marginEnd="5dp"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:paddingTop="1dp"-->
+<!--                    android:paddingBottom="1dp"-->
+<!--                    android:src="@drawable/ic_add_location"-->
+<!--                    app:tint="@color/light_blue" />-->
+
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/ic_date"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/oswald"
+                    android:text="Date:"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginStart="1dp"
+                    android:textColor="@color/light_blue"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/editDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/oswald"
+                    android:text="02-12-2022"
+                    android:paddingStart="10dp"
+                    android:textSize="19sp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="32dp"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/saveBtnEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:text="Save"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/White"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:hapticFeedbackEnabled="true"
+                    android:background="@drawable/button_edit"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
